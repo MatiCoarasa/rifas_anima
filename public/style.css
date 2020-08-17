@@ -1,0 +1,147 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #fba97e;
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-weight: 500;
+    width: 90%;
+    margin: 10px auto;
+}
+p span{
+    font-weight: 700;
+}
+p a{
+    color: #2f66ff !important;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+img{
+    width: 30%;
+    margin-left: 35%;
+}
+form{
+    width: 90%;
+    margin-left: 5%;
+}
+label{
+    font-weight: 600;
+    text-align: center;
+    display: block;
+}
+input{
+    min-height: 30px;
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 500;
+}
+#cantidad{
+    width: 30%;
+    margin: 10px auto 15px auto;
+}
+button{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    display: block;
+    margin: 10px auto;
+    background-color: #229fd4;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+    transition:all .5s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #5bb5db;
+    transform: scale(1.1);
+}
+h2{
+    text-align: center;
+}
+.contacto h3{
+    text-align: center;
+    font-weight: 400;
+}
+.contacto div{
+    display: block;
+    width: 50%;
+    margin: auto auto 20px auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    text-align-last: justify;
+}
+.contacto div a{
+    width: 30px;
+    height: 30px;
+}
+.contacto div a img{
+    width: 30px;
+    margin: auto 8px;
+    transition: all .3s;
+}
+.contacto div a img:hover{
+    transform: scale(1.2);
+}
+
+@media(min-width:576px){
+    img{
+        width: 10%;
+        margin-left: 45%;
+    }
+    .form-group{
+        display: inline-block;
+        width: 40%;
+        margin-left: 5%;
+    }
+    .form-mail{
+        width: 60%;
+        
+        margin: auto 0 auto 5%;
+    }
+    .form-cant{
+        width:20%;
+    }
+    .form-cant #cantidad{
+        width:100%
+    }
+    label, input{
+        text-align: left;
+    }
+    input{
+        padding: 0 10px;
+    }
+    button{
+        margin-bottom: 20px;
+    }
+    p{
+        width: 80%;
+    }
+    .contacto{
+        margin-top: 30px;
+    }
+    .contacto div{
+        width: 40%;
+    }
+}
+
+@media(min-width:790px){
+    form{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .contacto div{
+        width: 30%;
+    }
+}

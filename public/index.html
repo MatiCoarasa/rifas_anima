@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Rifas Anima Solidaria</title>
+</head>
+
+<body>
+  <section>
+  <img src="/img/logo_anima.png" alt="logo-anima">
+  <h1>Rifa Solidaria</h1>
+  <p>Valor de la rifa: <b>$100</b></p>
+  <p>Completá tus datos para dirigirte a Mercado Pago</p>
+    <form action="/procesar_pago" method="POST">
+      <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required>
+      </div>
+      <div class="form-group form-mail">
+        <label for="mail">Mail</label>
+        <input type="email" id="mail" name="mail" placeholder='Acá vas a recibir tus números' required>
+      </div>
+      <div class="form-group form-tel">
+        <label for="tel">Celular</label>
+        <input type="tel" id="tel" name="tel" placeholder='Ej: 1156123784' required>
+      </div>
+      <div class="form-group form-cant">
+        <label for="cantidad">Cantidad de Rifas</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+      </div>
+      <button type="submit" value="Submit">Ir a Mercado Pago</button>
+    </form>
+    <p>Lo recaudado será destinado a continuar con la olla popular para el barrio La Carbonilla y el envío de alimentos a la provincia de Misiones</p>
+    <h2>¡Gracias por ayudarnos!</h2>
+
+    <div class="contacto"><h3>Contactanos en:</h3>
+      <div>
+    <a href="https://www.instagram.com/AnimaSolidaria/" target="blank"><img src="/img/instagram.png" alt="icono instagram"></a>
+  </div>
+  </div>
+  </section>
+</body>
+</html>
