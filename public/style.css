@@ -2,7 +2,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-color: #fba97e;
+    background-color: #f3b69d;
 }
 h1{
     font-size: 1.5rem;
@@ -106,15 +106,19 @@ h2{
         margin-left: 5%;
     }
     .form-mail{
-        width: 60%;
-        
+        width: 40%;
         margin: auto 0 auto 5%;
     }
     .form-cant{
         width:20%;
+        text-align: center;
+        margin-left: 40%;
+    }
+    .form-cant label {
+        text-align: center;
     }
     .form-cant #cantidad{
-        width:100%
+        width:100%;
     }
     label, input{
         text-align: left;

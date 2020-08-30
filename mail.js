@@ -19,9 +19,8 @@ function enviar_mail_comprador(dest, rifas){
         ejs.renderFile(path.join(__dirname, 'views', 'mail.ejs'), { data: { rifas_oracion, numeros_rifas } }, (err, rendered_html) => {
             if(err) reject(err);
             else {
-
                 let mail_params = {
-                    from: process.env.EMAIL,
+                    from: `Anima Solidaria <${process.env.EMAIL}>`,
                     to: dest,
                     subject: `Tus Rifas - ${process.env.NOMBRE_ORGANIZACION}`,
                     html: rendered_html
