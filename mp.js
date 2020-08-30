@@ -23,7 +23,11 @@ async function crear_prod(nombre, apellido, mail, cantidad){
             }
         ],
         payment_methods: {
-            installments: 1
+            installments: 1,
+            excluded_payment_types: [
+                { "id": "ticket" },
+                { "id": "atm" }
+            ]
         },
         binary_mode: true,
         auto_return: "approved",
